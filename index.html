@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue-resource.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="content">
+				<div class="left fl">
+					<img src="img/images/logo_03.png"/>
+					<div class="l_top">
+						<img src="img/images/zuo01.png"/>
+						<img src="img/images/you01.png"/>
+						<p class="c">东方时尚</p>
+						<p class="y">东方时尚</p>
+						<p>东方时尚</p>
+					</div>
+					<div class="l_top2">
+						<div class="bg">
+							<p><img src="img/images/zuo.png"/>游戏公告<img src="img/images/you.png"/></p>
+							
+						</div>
+						<div class="l_top2_box">
+							<p>动一动你的手指，让仙剑OL跟美好！</p>
+							<p>点击填写调查报告>>></p>
+							<p>http://idsa.slld.com.dsjlkddmfl?</p>
+							<p>id=87</p>
+						</div>
+					</div>
+					<div class="l_top3">
+						<div class="l_top3_l">
+							<button>腾讯微博</button>
+							<div class="user">
+								<dl>
+									<dt><img src="img/images/ii_21.jpg"/></dt>
+									<dd>
+										<p><img class="fr" src="img/images/ii_25.jpg"/>仙剑OL <img src="img/images/ii_23.jpg"/></p>
+										<p>+立即收听</p>
+									</dd>
+								</dl>
+							</div>
+							<div class="l_top3_con">
+								<p>的结果是个开始过来的个是的撒地个开始过来的个是的撒地个开始过来的个是的撒地个开始过来的个是的撒地方撒地方撒地方阿斯顿发撒地方示范点啊发阿斯顿发 </p>
+								<p><span><img src="img/images/ii_31.jpg"/>(1)</span>1月4日&nbsp;14:12&nbsp;来之网页</p>
+								<p>转播：雪景美~人更美（看上去很冷的样纸/微博</p>
+								<p>宫：@xj——9you北京下雪了，于是雪岭洞天的图就出来了，话说这</p>
+							</div>
+						</div>
+					</div>
+					<div class="l_top4">
+						<div>
+							<img src="img/images/ii_35.jpg"/>
+							<img src="img/images/ii_38.jpg"/>
+							<img src="img/images/ii_49.jpg"/>
+						</div>
+					</div>
+					<div class="l_top2 cc">
+						<div class="bg">
+							<p><img src="img/images/zuo.png"/>客服信息<img src="img/images/you.png"/></p>
+							
+						</div>
+						<div class=" l_top2_box cyq ">
+							<li><span>客服热线：</span>012-61361873</li>
+							<li><span>客服传真：</span>012-61361873</li>
+							<li><span>用户投诉：</span>012-61361873</li>
+							<li><span>客服邮箱：</span>012-61361873@qq.com</li>
+							<li><span>客服中心：</span>012-61361873</li>
+							<li>就有家长监控>></li>
+						</div>
+					</div>
+				</div>
+				<div class="right fr">
+					<div class="r_top">
+						<div class="r_top_one">
+							<div class="r_left fl">
+								<ul>
+									<li @click="y" :class="{active:one}">最新新闻</li>
+									<li @click="e" :class="{active:two}">活动新闻</li>
+									<li @click="s" :class="{active:three}">产品公告</li>
+									<li @click="si" :class="{active:four}">今日九游</li>
+								</ul>
+								<div v-show="one">
+									<p v-for="ite in xuank"><span>{{ite.time}}</span>[最新新闻]&nbsp;&nbsp;{{ite.title}}</p>
+								</div>
+								<div v-show="two">
+									<p v-for="ite in xuank1"><span>{{ite.time}}</span>[活动新闻]&nbsp;&nbsp;{{ite.title}}</p>
+								</div>
+								<div v-show="three">
+									<p v-for="ite in xuank2"><span>{{ite.time}}</span>[产品公告]&nbsp;&nbsp;{{ite.title}}</p>
+								</div>
+								<div v-show="four">
+									<p ><span>{{xuank3.time}}</span>[今日九游]&nbsp;&nbsp;{{xuank3.title}}</p>
+								</div>
+							</div>
+							<div class="r_right fl">
+								<img src="img/images/ii_03.jpg"/>
+							</div>
+						</div>
+					</div>
+					<div class="r_top2">
+						<p>版本专题</p>
+						<div class="ping1">
+							<button class="goR">&lt;</button>
+							<button class="goL">&gt;</button>
+							<div class="ping">
+								<ul>
+									<li><img src="img/images/4.jpg"/></li>
+									<li><img src="img/images/41.jpg"/></li>
+									<li><img src="img/images/7.jpg"/></li>
+									<li><img src="img/images/4.jpg"/></li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					<div class="r_top2 ch">
+						<p>游戏资料</p>
+						<div class="con">
+							<ul>
+								<li>职业相关：<span v-for="ite in info.job">{{ite.name}}</span></li>
+								<li>系统介绍：<span v-for="ite in info.about">{{ite.name}}</span></li>
+								<li>战斗相关：<span v-for="ite in info.product">{{ite.name}}</span></li>
+								<li>装备相关：<span v-for="ite in info.sitting">{{ite.name}}</span></li>
+								<li>坐骑相关：<span v-for="ite in info.system">{{ite.name}}</span></li>
+								<li>鱼鳞相关：<span v-for="ite in info.war">{{ite.name}}</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="r_top2 ll">
+						<div>
+							<p>游戏资料</p>
+							<div>
+								<img src="img/images/ii_40.jpg"/>
+								<img src="img/images/ii_42.jpg"/>
+								<span id="pp">查看更多>></span>
+							</div>
+						</div>
+						<div>
+							<p>游戏资料</p>
+							<div>
+								<img src="img/images/ii_44.jpg"/>
+								<img src="img/images/ii_46.jpg"/>
+								<span id="pp">查看更多>></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div><img src="img/images/ii_56.jpg"/></div>
+				<div>
+					<img src="img/images/ii_60.jpg" alt="" />
+					<img src="img/images/ii_62.jpg" alt="" />
+				</div>
+				<ul>
+					<li>九游网版权所有Copyrtds;sdfj;dsjlslsjdljsdfljlds</li>
+					<li>jlasd ;sldjf asdfj jldjasd dhdfl shdfkks</li>
+					<li>中华人民共和国网游出版许可证：132454456</li>
+					<li>中华人民共和国网游版许可证：132454sdfsd456</li>
+					<li>中华人民共和游出版许可证：13245sdf4456</li>
+					<li>中华人民共和国可证：13245sdf4456</li>
+					<li>中华人民国网游出版许可证：1324d54456</li>
+					<li>中华人民共和国网游出版许可证：1324sdfs54456</li>
+				</ul>
+				
+			</footer>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var timer = null;
+				var w = $('.ping').width();
+				var num = 0;
+				var speed = 1000;
+				$(".goL").click(function () {
+					if (!$(".ping ul").is(":animated")) {
+						if (num == $(".ping ul li").length - 1) {
+							$(".ping ul").css("margin-left", "0px");
+							num = 0;
+						}
+						num++;
+						$(".ping ul").animate({
+							"margin-left": -w * num + "px",
+						}, speed)
+					}
+				})
+				$(".goR").click(function () {
+					if (!$(".ping ul").is(":animated")) {
+						if (num == 0) {
+							$(".ping ul").css("margin-left", -w * ($(".ping ul li").length - 1) + "px");
+							num = $(".ping ul li").length - 1
+						}
+						num--;
+	
+						$(".ping ul").animate({
+							"margin-left": -w * num + "px",
+						}, speed)
+					}
+				});
+				timer = setInterval(function(){
+					$(".goL").click();
+				},900)
+				$(".ping").on('mouseenter',function(){
+					clearInterval(timer)
+				})
+				$(".ping").on('mouseleave',function(){
+					timer = setInterval(function(){
+						$(".goL").click();
+					},900)
+				})
+			})
+		</script>
+	</body>
+</html>

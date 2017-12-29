@@ -25,7 +25,8 @@ $(document).ready(function (ev) {
     function sj(max,min){
         return Math.round(Math.random()*(max-min)+min)
     }
-    // $('.bg').attr('src',"img/0"+ sj(1,6) +".jpg")
+    $('.head').width($(window).width())
+    $('.head').height($(window).height())
 
     //go
     $(".go").click(function(){

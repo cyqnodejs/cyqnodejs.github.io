@@ -27,7 +27,8 @@ $(document).ready(function (ev) {
     }
     $('.head').width($(window).width())
     $('.head').height($(window).height())
-
+    console.log($(window).height())
+    console.log($(window).width())
     //go
     $(".go").click(function(){
         $(document.documentElement).animate({

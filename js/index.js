@@ -25,17 +25,24 @@ $(document).ready(function (ev) {
     function sj(max,min){
         return Math.round(Math.random()*(max-min)+min)
     }
-    $('.head').height($(window).height())
+    //head 首屏效果
+    const window_h = $(window).height();
+    $('.head').height(window_h)
     //go
     $(".go").click(function(){
         $('body,html').animate({
             'scrollTop':$('.head').height() + 'px'
         },400)
     });
-    //go
+    //go_top
     $(".go_top").click(function(){
         $('body,html').animate({
             'scrollTop':'0px'
         },400)
     });
+    //监听浏览器窗口变化
+    $(window).resize(function () {          //当浏览器大小变化时
+        $('.head').height(window_h)
+    });
+    
 });

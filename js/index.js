@@ -25,19 +25,16 @@ $(document).ready(function (ev) {
     function sj(max,min){
         return Math.round(Math.random()*(max-min)+min)
     }
-    $('.head').width($(window).width())
     $('.head').height($(window).height())
-    console.log($(document).height())
-    console.log($(window).height())
     //go
     $(".go").click(function(){
-        $(document.documentElement).animate({
+        $('body,html').animate({
             'scrollTop':$('.head').height() + 'px'
         },400)
     });
     //go
     $(".go_top").click(function(){
-        $(document.documentElement).animate({
+        $('body,html').animate({
             'scrollTop':'0px'
         },400)
     });

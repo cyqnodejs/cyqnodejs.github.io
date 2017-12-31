@@ -3,277 +3,200 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel='stylesheet prefetch' href='css/animate.min.css'>
-	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<title>曹永强的个人网页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+	/>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/gong.css">
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="font_ali/iconfont.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<style type="text/css">
-		.icon {
-			width: 1em;
-			height: 1em;
-			vertical-align: -0.15em;
-			fill: currentColor;
-			overflow: hidden;
-		}
-	</style>
 </head>
 
 <body>
-	<div class="container">
-		<div class="head">
-			<img class="bg" src="img/08.jpg" alt="">
-			<div class="head_top">
-				<div class="header">
-					<div class="wenzi">
-						<h2>你老了，我们长大了</h2>
-						<p>随着年岁渐长，我已长成大人模样，以为自己可以挣脱束缚，迎接自由的生活，但回头看，我发现我迈不开步子，我潇洒不起来了，因为我看到了你的黑发已经不再乌黑，慢慢添了些许的“白霜”，我知道渴望我长大的你很不容易，我们的平凡，在生活的路上一步步平凡的走着，你们谨慎的，小心的护着我不让颠簸路途出现在我成长的路上!</p>
-						<p>很感谢你们的爱护，我以为我们会一直这样平稳的迈向阳光大道，潇洒的说走就走!</p>
-						<p>小时候，你带我跨过泥泞的小水沟，那么有力的臂膀，让我充满安全感的臂膀，如今却时常跟我们说着不舒服，一次手术，将曾经神采奕奕的你，变得瞬间苍老起来，我还是想你回到小时候的那个岁月，那时的你多么伟岸，能撑起我们家的一片天!</p>
-						<p>小时候，你骑着摩托带我们游山玩水，现在换成我们开着车带你兜转城市!
-							<br>你老了，我们长大了。</p>
+	<div id="wrapper">
+		<header>
+			<div class="headtop"></div>
+			<div class="contenttop">
+				<div class="logo f_l">曹永强的个人网页</div>
+				<div class="search f_r">
+					<form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+						<input name="keyboard" id="keyboard" class="input_text" value="请输入关键字" style="color: rgb(153, 153, 153);" onfocus="if(value=='请输入关键字'){this.style.color='#000';value=''}"
+						    onblur="if(value==''){this.style.color='#999';value='请输入关键字'}" type="text">
+						<input name="show" value="title" type="hidden">
+						<input name="tempid" value="1" type="hidden">
+						<input name="tbname" value="news" type="hidden">
+						<input name="Submit" class="input_submit" value="搜索" type="submit">
+					</form>
+				</div>
+				<div class="blank"></div>
+				<nav>
+					<div class="navigation">
+						<ul class="menu">
+							<li>
+								<a href="index.html">首页</a>
+							</li>
+							<li>
+								<a href="#">关于我</a>
+								<ul>
+									<li>
+										<a href="about.html">个人简介</a>
+									</li>
+									<li>
+										<a href="listpic.html">个人相册</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">我的日记</a>
+								<ul>
+									<li>
+										<a href="newslistpic.html">个人日记</a>
+									</li>
+									<li>
+										<a href="newslistpic.html">学习笔记</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="newslistpic.html">技术文章</a>
+							</li>
+							<li>
+								<a href="#">给我留言</a>
+							</li>
+						</ul>
 					</div>
-					<!-- 返回顶部 -->
-					<svg class="icon go_top" aria-hidden="true">
-						<use xlink:href="#icon-fanhuidingbu"></use>
-					</svg>
-					<!-- 向下 -->
-					<svg class="icon go" aria-hidden="true">
-						<use xlink:href="#icon-jiantouxia"></use>
-					</svg>
+				</nav>
+			</div>
+		</header>
+		<div class="jztop"></div>
+		<div class="container">
+			<div class="bloglist f_l">
+				<div>
+					<h3>
+						<a href="/">【心路历程】请不要在这条路上徘徊啦</a>
+					</h3>
+					<figure>
+						<img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦">
+					</figure>
+					<ul>
+						<p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
+						<a title="【心路历程】请不要在设计这条路上徘徊啦" href="/" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					<p class="dateview">
+						<span>2017-07-13</span>
+						<span>作者：</span>
+						<span>个人博客：[
+							<a href="/">心得笔记</a>]</span>
+					</p>
+				</div>
+				<div>
+					<h3>
+						<a href="/">【心路历程】请不要在这条路上徘徊啦</a>
+					</h3>
+					<figure>
+						<img src="images/img_1.jpg" alt="【心路历程】请不要在设计这条路上徘徊啦">
+					</figure>
+					<ul>
+						<p> 我整理了一下网友给我的来信，如果你还在踌躇不前，不妨来看看，到底要不要坚持下去！我也欢迎大家给我来信，希望能帮到更多人。</p>
+						<a title="【心路历程】请不要在设计这条路上徘徊啦" href="/" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+					</ul>
+					<p class="dateview">
+						<span>2017-07-13</span>
+						<span>作者：</span>
+						<span>个人博客：[
+							<a href="/">心得笔记</a>]</span>
+					</p>
 				</div>
 			</div>
-		</div>
-		<div class="content">
-			<nav>
-
-			</nav>
-			<div class="left fl">
-				<div class="l_top">
-					<dl class="touxiang">
-						<dt>
-							<img src="img/07.jpg" alt="">
-						</dt>
-						<dd>曹永强</dd>
-					</dl>
-				</div>
-				<div class="l_top2">
-					<div class="bg">
-						<p>
-							<img src="img/images/zuo.png" />Personal profile
-							<img src="img/images/you.png" />
-						</p>
-					</div>
-					<div class="l_top2_box">
-						<p>
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-geren"></use>
-							</svg>
-							曹永强
-						</p>
-						<p>
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-xiaoenai"></use>
-							</svg>
-							听音乐、游泳
-						</p>
-						<p>
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-coordinates_fill"></use>
-							</svg>
-							中国·北京
-						</p>
-						<p>
-							<svg class="icon" aria-hidden="true">
-								<use xlink:href="#icon-wechat"></use>
-							</svg>
-							CYQ52521
-						</p>
-					</div>
-				</div>
-				<div class="l_top3">
-					<div class="l_top3_l">
-						<button>腾讯微博</button>
-						<div class="user">
-							<dl>
-								<dt>
-									<img src="img/images/ii_21.jpg" />
-								</dt>
-								<dd>
-									<p>
-										<img class="fr" src="img/images/ii_25.jpg" />仙剑OL
-										<img src="img/images/ii_23.jpg" />
-									</p>
-									<p>+立即收听</p>
-								</dd>
-							</dl>
-						</div>
-						<div class="l_top3_con">
-							<p>的结果是个开始过来的个是的撒地个开始过来的个是的撒地个开始过来的个是的撒地个开始过来的个是的撒地方撒地方撒地方阿斯顿发撒地方示范点啊发阿斯顿发 </p>
-							<p>
-								<span>
-									<img src="img/images/ii_31.jpg" />(1)</span>1月4日&nbsp;14:12&nbsp;来之网页</p>
-							<p>转播：雪景美~人更美（看上去很冷的样纸/微博</p>
-							<p>宫：@xj——9you北京下雪了，于是雪岭洞天的图就出来了，话说这</p>
-						</div>
-					</div>
-				</div>
-				<div class="l_top4">
-					<div>
-						<img src="img/images/ii_35.jpg" />
-						<img src="img/images/ii_38.jpg" />
-						<img src="img/images/ii_49.jpg" />
-					</div>
-				</div>
-				<div class="l_top2 cc">
-					<div class="bg">
-						<p>
-							<img src="img/images/zuo.png" />客服信息
-							<img src="img/images/you.png" />
-						</p>
-
-					</div>
-					<div class=" l_top2_box cyq ">
-						<li>
-							<span>客服热线：</span>012-61361873</li>
-						<li>
-							<span>客服传真：</span>012-61361873</li>
-						<li>
-							<span>用户投诉：</span>012-61361873</li>
-						<li>
-							<span>客服邮箱：</span>012-61361873@qq.com</li>
-						<li>
-							<span>客服中心：</span>012-61361873</li>
-						<li>就有家长监控>></li>
-					</div>
-				</div>
-			</div>
-			<div class="right fr">
-				<div class="r_top">
-					<div class="r_top_one">
-						<div class="r_left fl">
-							<ul>
-								<li class="active">我的笔记</li>
-								<li class="two">es6</li>
-								<li class="three">产品公告</li>
-								<li class="four">我的收藏</li>
-							</ul>
-							<div v-show="one">
-
-								安静的看着刘崇，刘亚伟，杨健，赵慧闯，胡静，张泽龙，钱致富如何装逼，
-
-							</div>
-							<div v-show="two">
-							</div>
-							<div v-show="three">
-							</div>
-							<div v-show="four">
-							</div>
-						</div>
-						<div class="r_right fl">
-							<img src="img/images/ii_03.jpg" />
-						</div>
-					</div>
-				</div>
-				<div class="r_top2">
-					<p>版本专题</p>
-					<div class="ping1">
-						<button class="goR">&lt;</button>
-						<button class="goL">&gt;</button>
-						<div class="ping">
-							<ul>
-								<li>
-									<img src="img/images/4.jpg" />
-								</li>
-								<li>
-									<img src="img/images/41.jpg" />
-								</li>
-								<li>
-									<img src="img/images/7.jpg" />
-								</li>
-								<li>
-									<img src="img/images/4.jpg" />
-								</li>
-							</ul>
-						</div>
-
-					</div>
-				</div>
-				<div class="r_top2 ch">
-					<p>学习资料</p>
-					<div class="con">
+			<div class="r_box f_r">
+				<div class="tit01">
+					<h3 class="tit">关注我</h3>
+					<div class="gzwm">
 						<ul>
-							<li>职业相关：
-								<span v-for="ite in info.job">{{ite.name}}</span>
+							<li>
+								<a class="email" href="#" target="_blank">我的电话</a>
 							</li>
-							<li>系统介绍：
-								<span v-for="ite in info.about">{{ite.name}}</span>
+							<li>
+								<a class="qq" href="/" target="_blank">我的邮箱</a>
 							</li>
-							<li>战斗相关：
-								<span v-for="ite in info.product">{{ite.name}}</span>
+							<li>
+								<a class="tel" href="https://user.qzone.qq.com/1016771135" target="_blank">我的QQ</a>
 							</li>
-							<li>装备相关：
-								<span v-for="ite in info.sitting">{{ite.name}}</span>
-							</li>
-							<li>坐骑相关：
-								<span v-for="ite in info.system">{{ite.name}}</span>
-							</li>
-							<li>鱼鳞相关：
-								<span v-for="ite in info.war">{{ite.name}}</span>
+							<li>
+								<a class="prize" href="#">个人奖项</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="r_top2 ll">
-					<div>
-						<p>学习资料</p>
-						<div>
-							<img src="img/images/ii_40.jpg" />
-							<img src="img/images/ii_42.jpg" />
-							<span id="pp">查看更多>></span>
-						</div>
-					</div>
-					<div>
-						<p>学习资料</p>
-						<div>
-							<img src="img/images/ii_44.jpg" />
-							<img src="img/images/ii_46.jpg" />
-							<span id="pp">查看更多>></span>
-						</div>
-					</div>
+				<div class="tuwen">
+					<h3 class="tit">图文推荐</h3>
+					<ul>
+						<li>
+							<a href="/">
+								<img src="images/01.jpg">
+								<b>住在手机里的朋友</b>
+							</a>
+							<p>
+								<span class="tulanmu">
+									<a href="/">朋友们呢</a>
+								</span>
+								<span class="tutime">2017-02-15</span>
+							</p>
+						</li>
+						<li>
+							<a href="/">
+								<img src="images/02.jpg">
+								<b>教你怎样用欠费手机拨打电话</b>
+							</a>
+							<p>
+								<span class="tulanmu">
+									<a href="/">手机配件</a>
+								</span>
+								<span class="tutime">2017-02-15</span>
+							</p>
+						</li>
+						<li>
+							<a href="/" title="手机的16个惊人小秘密，据说99.999%的人都不知">
+								<img src="images/03.jpg">
+								<b>手机的16个惊人小秘密，据说...</b>
+							</a>
+							<p>
+								<span class="tulanmu">
+									<a href="/">手机配件</a>
+								</span>
+								<span class="tutime">2017-02-15</span>
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<div class="jzend"></div>
 		<footer>
-			<div>
-				<img src="" />
+			<div class="footer">
+				<div class="f_l">
+					<p>All Rights Reserved fasdfasdfas
+						<a href="https://cyqnodejs.github.io/">曹永强的个人博客</a> asdgdsgasdf</p>
+				</div>
+				<div class="f_r textr">
+					<p>Design by DanceSmile</p>
+				</div>
 			</div>
-			<div>
-				<img src="img/images/ii_60.jpg" alt="" />
-				<img src="img/images/ii_62.jpg" alt="" />
-			</div>
-			<ul>
-				<li>九游网版权所有Copyrtds;sdfj;dsjlslsjdljsdfljlds</li>
-				<li>jlasd ;sldjf asdfj jldjasd dhdfl shdfkks</li>
-				<li>中华人民共和国网游出版许可证：132454456</li>
-				<li>中华人民共和国网游版许可证：132454sdfsd456</li>
-				<li>中华人民共和游出版许可证：13245sdf4456</li>
-				<li>中华人民共和国可证：13245sdf4456</li>
-				<li>中华人民国网游出版许可证：1324d54456</li>
-				<li>中华人民共和国网游出版许可证：1324sdfs54456</li>
-			</ul>
 		</footer>
 	</div>
+
+
 	<!-- 右下角分享链接 -->
 	<div id='ss_menu' class="youxia">
 		<div>
-			<svg class="icon" aria-hidden="true">
-				<use xlink:href="#icon-qq"></use>
-			</svg>
+			<a href="https://user.qzone.qq.com/1016771135">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-qq"></use>
+				</svg>
+			</a>
 		</div>
 		<div>
 			<svg class="icon" aria-hidden="true">
@@ -281,23 +204,28 @@
 			</svg>
 		</div>
 		<div>
-			<svg class="icon" aria-hidden="true">
-				<use xlink:href="#icon-github"></use>
-			</svg>
+			<a href="https://github.com/cyqnodejs">
+				<svg class="icon" aria-hidden="true">
+					<use xlink:href="#icon-github"></use>
+				</svg>
+			</a>
 		</div>
 		<div>
 			<svg class="icon" aria-hidden="true">
 				<use xlink:href="#icon-csdn"></use>
 			</svg>
 		</div>
-		<div class='menu'>
+		<div class='menu_f'>
 			<div class='share' id='ss_toggle' data-rot='180'>
 				<div class='circle'></div>
 				<div class='bar'></div>
 			</div>
 		</div>
 	</div>
-
+	<!-- 返回顶部 -->
+	<svg class="icon go_top" aria-hidden="true">
+		<use xlink:href="#icon-fanhuidingbu"></use>
+	</svg>
 </body>
 
 </html>

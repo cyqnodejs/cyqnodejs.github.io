@@ -1,4 +1,4 @@
-$(document).ready(function (ev) {
+$(function (ev) {
     var toggle = $('#ss_toggle');
     var menu = $('#ss_menu');
     var rot;
@@ -22,27 +22,24 @@ $(document).ready(function (ev) {
             $('#ss_menu div i').removeClass('ss_animate');
         }
     });
-    function sj(max,min){
-        return Math.round(Math.random()*(max-min)+min)
-    }
-    //head 首屏效果
-    const window_h = $(window).height();
-    $('.head').height(window_h)
-    //go
-    $(".go").click(function(){
-        $('body,html').animate({
-            'scrollTop':$('.head').height() + 'px'
-        },400)
-    });
-    //go_top
+
     $(".go_top").click(function(){
         $('body,html').animate({
             'scrollTop':'0px'
         },400)
     });
-    //监听浏览器窗口变化
-    $(window).resize(function () {          //当浏览器大小变化时
-        $('.head').height(window_h)
+    //导航
+    $(".menu ul").css({
+        display: "none"
+    }); // Opera Fix
+    $(".menu li").hover(function () {
+        $(this).find('ul:first').css({
+            visibility: "visible",
+            display: "none"
+        }).slideDown("normal");
+    }, function () {
+        $(this).find('ul:first').css({
+            visibility: "hidden"
+        });
     });
-    
 });

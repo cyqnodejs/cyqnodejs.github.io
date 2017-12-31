@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+
+}
+.container {
+	min-width: 1000px;
+	width: 100%;
+	background-color: #fff;
+}
+
+
+/* 头像 */
+.touxiang{
+	margin:20px 0;
+	width: 100%;
+	height: 230px;
+	text-align: center;
+}
+.touxiang dt{
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+	overflow:hidden;
+	border-radius: 50%;
+}
+.touxiang dt img{
+	margin-left:-30px;
+	width: 150%;
+	height: 100%;
+}
+.touxiang dd {
+	padding-top: 10px;
+	font-size: 32px;
+	color:B16D74;
+	font-family: '楷体';
+}
+.content{
+	margin: 0 auto;
+	padding-top:50px;
+	width: 1000px;
+	overflow: hidden;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.left{
+	width: 290px;
+	padding: 10px 10px;
+	border: 1px solid #844134;
+	border-radius: 8px;
+	background-color: #d9baa5;
+}
+.l_top2{
+	width: 270px;
+	height: 185px;
+	border: 1px solid #e9cab5;
+	padding: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	background-color: #c2a590;
+}
+.bg{
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #e9cab5;
+}
+.bg p {
+	margin: 5px auto 0;
+	width: 185px;
+	height: 24px;
+	background-color: #5f0119;
+	color: #efcabb;
+	text-align: center;
+	line-height: 24px;
+	position: relative;
+}
+.bg img {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+}
+.bg img:nth-of-type(1){
+	left: -15px;
+}
+.bg img:nth-of-type(2){
+	right: -13px;
+}
+.l_top2 div:nth-of-type(2){
+	background-color: #ffe2ce
+}
+.l_top2_box{
+	padding:14px 30px;
+	margin-top: 5px;
+	border-radius: 5px;
+	font-size: 13px;
+	line-height: 22px;
+}
+.l_top2_box p{
+	margin-top:3px;
+}
+
+.youxia{
+	position:fixed;
+	right:20px;
+	bottom:20px;
+}
+.youxia svg{
+	margin-top:13px;
+}
+/* 个人简介 */
+.l_top2_box svg{
+	margin-right:5px;
+}
+
+

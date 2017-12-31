@@ -78,7 +78,6 @@
 html, body {
   width: 100%;
   height: 100%;
-  background: #212121;
   margin: 0;
   padding: 0;
 }
@@ -99,7 +98,7 @@ html, body {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-#ss_menu > .menu {
+#ss_menu > .menu_f {
   display: block;
   position: absolute;
   border-radius: 50%;
@@ -112,7 +111,7 @@ html, body {
   -moz-transition: all 1s ease;
   transition: all 1s ease;
 }
-#ss_menu > .menu .share {
+#ss_menu > .menu_f .share {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -127,7 +126,7 @@ html, body {
   -moz-transition: all 1s ease;
   transition: all 1s ease;
 }
-#ss_menu > .menu .share .circle {
+#ss_menu > .menu_f .share .circle {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
@@ -141,7 +140,7 @@ html, body {
   left: 12px;
   opacity: 1;
 }
-#ss_menu > .menu .share .circle:after, #ss_menu > .menu .share .circle:before {
+#ss_menu > .menu_f .share .circle:after, #ss_menu > .menu_f .share .circle:before {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
@@ -154,15 +153,15 @@ html, body {
   border-radius: 50%;
   background: #fff;
 }
-#ss_menu > .menu .share .circle:after {
+#ss_menu > .menu_f .share .circle:after {
   left: 20.78461px;
   top: 12.0px;
 }
-#ss_menu > .menu .share .circle:before {
+#ss_menu > .menu_f .share .circle:before {
   left: 20.78461px;
   top: -12.0px;
 }
-#ss_menu > .menu .share .bar {
+#ss_menu > .menu_f .share .bar {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
@@ -184,7 +183,7 @@ html, body {
   -o-transform: rotate(30deg);
   transform: rotate(30deg);
 }
-#ss_menu > .menu .share .bar:before {
+#ss_menu > .menu_f .share .bar:before {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
@@ -205,10 +204,10 @@ html, body {
   -o-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
-#ss_menu > .menu .share.close .circle {
+#ss_menu > .menu_f .share.close .circle {
   opacity: 0;
 }
-#ss_menu > .menu .share.close .bar {
+#ss_menu > .menu_f .share.close .bar {
   top: 50%;
   margin-top: -1.5px;
   left: 50%;
@@ -224,7 +223,7 @@ html, body {
   -o-transform: rotate(405deg);
   transform: rotate(405deg);
 }
-#ss_menu > .menu .share.close .bar:before {
+#ss_menu > .menu_f .share.close .bar:before {
   -webkit-transform-origin: 50% 50%;
   -moz-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
@@ -236,7 +235,7 @@ html, body {
   -o-transform: rotate(-450deg);
   transform: rotate(-450deg);
 }
-#ss_menu > .menu.ss_active {
+#ss_menu > .menu_f.ss_active {
   background: #00796B;
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);

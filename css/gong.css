@@ -1,0 +1,25 @@
+/* 返回顶部 */
+.go_top{
+	position: fixed;
+	bottom: 110px;
+	right: 35px;
+	font-size: 50px;
+	color: #00796B;
+	cursor: pointer;
+}
+/* 右下 */
+.youxia{
+	position:fixed;
+	right:0px;
+	bottom:20px;
+}
+.youxia svg{
+	margin-top:13px;
+}
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}

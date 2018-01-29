@@ -1,0 +1,72 @@
+/* 公用样式 */
+.ceel-top{
+  margin-top: 30px;
+}
+.ceel-bottom{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.ceel-sm{
+  margin-right: 5px;
+}
+.ceel-xsm{
+  margin-top: 2px;
+}
+.ceel-padding{
+  padding: 3px 5px;
+  margin: 0 5px;
+  display: inline-block
+}
+/* header */
+.container {
+  width: 100%;
+}
+.head{
+  padding:60px 0;
+  background: url(../images/19.jpg) no-repeat;
+  background-size: 100% 100%
+}
+.headerimg{
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.ceel-nav li{
+  padding: 3px 7px;
+  background: rgba(131, 131, 138,.7);
+  border-radius: 5px;
+  cursor:pointer;
+}
+.ceel-nav li:hover{
+  background:  rgb(138, 138, 190);
+
+}
+.ceel-nav li:hover > a{
+  color: #303530;
+}
+.ceel-nav li a{
+  color: rgb(250, 237, 237);
+  text-decoration: none
+}
+/* header end */
+/* contact and about */
+.ceel-left{
+  margin-right: 10px;
+  padding: 5px 0;
+}
+.ceel-list li{
+  padding: 3px 0 3px 10px;
+}
+.ceel-list i{
+  margin-right: 12px;
+}
+.ceel-container {
+  background: rgba(225, 225, 225, .6)
+}
+.ceel-about{
+  width: 80px;
+  display: inline-block;
+}
+/* end */

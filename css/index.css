@@ -70,3 +70,10 @@
   display: inline-block;
 }
 /* end */
+body,html{
+  background:url(images/qiangzhi.jpg);
+  background-size:cover;
+}
+.ceel-skill li {
+  margin: 5px 0
+}
